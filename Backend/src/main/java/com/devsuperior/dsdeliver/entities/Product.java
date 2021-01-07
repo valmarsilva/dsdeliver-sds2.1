@@ -31,7 +31,7 @@ public class Product  implements Serializable {
 		this.id = id;
 		this.name = name;
 		this.price = price;
-		this.desccription = desccription;
+		this.description = desccription;
 		this.imageUri = imageUri;
 	}
 
@@ -60,11 +60,11 @@ public class Product  implements Serializable {
 	}
 
 	public String getDesccription() {
-		return desccription;
+		return description;
 	}
 
 	public void setDesccription(String desccription) {
-		this.desccription = desccription;
+		this.description = desccription;
 	}
 
 	public String getImageUri() {
