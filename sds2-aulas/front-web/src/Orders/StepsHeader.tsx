@@ -1,5 +1,5 @@
 
-
+import  './styles.css';
 function StepsHeader(){
     return (
 
