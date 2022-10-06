@@ -1,3 +1,4 @@
+import { OrderPayload } from "./Orders/types";
 import axios from "axios";
 const API_URL ='http://localhost:8080';
 const mapboxToken =process.env.REACT_APP_ACCESS_TOKEN_MAP_BOX;
@@ -11,5 +12,6 @@ return axios(
 );
 
 }
-//export function saveOrder(payLoad: OrderPayload) {
- // return axios.post(`${API_URL}/orders`, payload);
+export function saveOrder(payLoad: OrderPayload) {
+ return axios.post(`${API_URL}/orders`, payLoad);
+}
